@@ -6,6 +6,7 @@
 
 -   git clone https://github.com/Hwan-seok/shoppingBasketReact.git
 -   cd shoppingBasketReact
+-   npm install
 -   npm start
 
 #### 2. Chrome
