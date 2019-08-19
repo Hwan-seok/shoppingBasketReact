@@ -4,21 +4,21 @@ import {toggleSelect} from '../actions';
 
 class Product extends React.Component {
   style = {
+    borderColor: this.props.isSelected ? 'DodgerBlue' : 'none',
+    backgroundColor: this.props.isSelected ? 'rgba(30, 144, 255, 0.2)' : 'none',
     position: 'relative',
     float: 'left',
     borderStyle: 'solid',
     borderWidth: '1px',
     width: '47%',
-    height: '33%',
+    height: '30%',
     margin: '10px',
     // textDecoration: this.props.completed ? 'line-through' : 'none',
-    borderColor: this.props.isSelected ? 'DodgerBlue' : 'none',
     // margin: 'auto',
     // marginBottom: '14px',
     // padding: '20px',
     // borderStyle: 'solid',
     // borderWidth: '0 0 0 8px',
-    backgroundColor: this.props.isSelected ? 'rgba(30, 144, 255, 0.2)' : 'none',
     // listStyle: 'none',
     // display: 'flex',
     // width: '1000px',
@@ -32,7 +32,7 @@ class Product extends React.Component {
     borderRadius: '20px',
   };
   render() {
-    console.log('product render', this.props);
+    console.log('product reRender', this.props);
     return (
       <div style={this.style} onClick={this.props.toggleSelect}>
         <div style={{float: 'left'}}>

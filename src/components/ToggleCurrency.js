@@ -23,6 +23,12 @@ class ToggleCurrency extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    currencyDollar: state.currencyDollar,
+  };
+};
+
 const mapDispatchToProps = (dispatch) => {
   return {
     toggleCurrency: () => dispatch(toggleCurrency()),
@@ -30,7 +36,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 ToggleCurrency = connect(
-    undefined,
+    mapStateToProps,
     mapDispatchToProps
 )(ToggleCurrency);
 
