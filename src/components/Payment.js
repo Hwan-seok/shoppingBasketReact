@@ -12,7 +12,13 @@ class Payment extends React.Component {
     width: '32%',
   };
   render() {
-    return <div style={this.style}>adsf</div>;
+    return (
+      <div style={this.style}>
+        <NumSelect />
+        <SumSelect />
+        <ToggleCurrency />
+      </div>
+    );
   }
 }
 

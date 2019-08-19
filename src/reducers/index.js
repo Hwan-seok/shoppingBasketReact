@@ -25,7 +25,7 @@ const reducer = (state = initialState, action) => {
     case TOGGLE_CURRENCY:
       return {
         ...state,
-        todo: [...state.todo, {text: action.text, completed: false}],
+        currencyDollar: !state.currencyDollar,
       };
     case TOGGLE_SELECT:
       return {
