@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import NumSelect from './NumSelect';
 import SumSelect from './SumSelect';
 import ToggleCurrency from './ToggleCurrency';
+import Footer from './Footer';
 
 class Payment extends React.Component {
   style = {
+    position: 'relative',
     float: 'right',
     borderStyle: 'solid',
     height: '600px',
@@ -14,6 +16,7 @@ class Payment extends React.Component {
   render() {
     return (
       <div style={this.style}>
+        <Footer />
         <NumSelect />
         <SumSelect />
         <ToggleCurrency />

@@ -10,6 +10,7 @@ class ToggleCurrency extends React.Component {
     height: '20%',
     margin: '5%',
     top: '100px',
+    backgroundColor: 'skyblue',
   };
   render() {
     let text = '';

@@ -3,8 +3,8 @@ import {connect} from 'react-redux';
 
 class SumSelect extends React.Component {
   render() {
-    if (this.props.currencyDollar == false) return <div>\{this.props.sum}</div>;
-    else return <div>${(this.props.sum / 1100).toFixed(2)}</div>;
+    if (this.props.currencyDollar == false) return <h3>\{this.props.sum}</h3>;
+    else return <h3>${(this.props.sum / 1100).toFixed(2)}</h3>;
   }
 }
 
